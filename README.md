@@ -1,6 +1,10 @@
 # qgis-pluginbuilder-minimalresult
 
-This repo automates the release of a qgis -minimal- plugin, to be served by qgis-plugin-server
+This repo automates the push to release of a QGIS plugin.  
+- So it can be installed as the released.zip:  
+`QGIS > Menu > Plugins > Manage and Install Plugins... > Install from ZIP > choose release.zip`  
+- Or be served by a qgis-plugin-server:  
+`QGIS > Menu > Plugins > Manage and Install Plugins... > Settings > Add ... > URL http://yourpluginserver/plugin.xml`
 
 # steps
 1. [Install QGIS](https://qgis.org/en/site/forusers/download.html)
@@ -15,10 +19,18 @@ This repo automates the release of a qgis -minimal- plugin, to be served by qgis
 
 6. Add the github action that zips and releases it
 
-7. Create a 'v' prefixed tag to trigger the action
+7. Manage tags, to create a release when a new tag is pushed
 ```
+# create tag
 git tag -a v0.1 -m 'action test'
+
+# delete local tag 
 git tag --delete v0.1
+# delete remote 
+git push --delete origin v0.1
+
+# push single
+git push origin v0.1
 # push all tags
 git push origin --tags
 ```
