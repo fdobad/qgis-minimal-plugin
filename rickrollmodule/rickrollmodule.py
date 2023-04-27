@@ -67,7 +67,6 @@ class RickRollClass:
         # Check if plugin was started the first time in current QGIS session
         # Must be set in initGui() to survive plugin reloads
         self.first_start = None
-        self.count = None
 
     # noinspection PyMethodMayBeStatic
     def tr(self, message):
@@ -192,7 +191,7 @@ class RickRollClass:
             self.dlg = RickRollClassDialog()
             self.dlg.webView.load(QUrl("https://www.youtube.com/watch?v=dQw4w9WgXcQ"))
             self.dlg.setMinimumSize(500, 400)
-            self.iface.messageBar().pushMessage("Excelent!", "Dance to the beat!", level=Qgis.Success)
+            self.iface.messageBar().pushMessage("Plugin starts!", "We're no strangers to love. You know the rules and so do I", level=Qgis.Success)
 
         # show the dialog
         self.dlg.show()
@@ -205,4 +204,4 @@ class RickRollClass:
             self.dlg = None
             self.first_start = True
         else:
-            self.iface.messageBar().pushMessage("HAL 9000", "I'm sorry Dave, I'm afraid I can't do that.", level=Qgis.Critical, duration=5)
+            self.iface.messageBar().pushMessage("HAL 9000", "I'm sorry Dave, I'm afraid I can't do that. I'm never gonna give you up", level=Qgis.Critical, duration=5)

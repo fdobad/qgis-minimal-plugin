@@ -15,7 +15,7 @@ This repo automates the push to release of a QGIS plugin.
 ![builder-form](img/plugin_builder_form.png)
 ![manager-view](img/manage_and_install_plugins.png)
   
-4. Then display a web page adding [QWebEngineView](https://www.riverbankcomputing.com/static/Docs/PyQt5/api/qtwebenginewidgets/qwebengineview.html?highlight=qweb#QWebEngineView) through QtDesigner to the dialog. Plus a minor interaction...
+4. Then display a web page adding [QWebEngineView](https://www.riverbankcomputing.com/static/Docs/PyQt5/api/qtwebenginewidgets/qwebengineview.html?highlight=qweb#QWebEngineView) through QtDesigner to the dialog. Plus a minor interaction... Check the last lines of [module.py](rickrollmodule/rickrollmodule.py)
 
 6. Add the github action that zips and releases it
 
