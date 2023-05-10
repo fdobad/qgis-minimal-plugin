@@ -6,7 +6,7 @@
 name=Rick roller name
 qgisMinimumVersion=3.0
 description=Rick roll description
-version=0.1
+version=0.2
 author=fdobad
 email=8339628-fdobad@users.noreply.gitlab.com
 
@@ -23,7 +23,7 @@ hasProcessingProvider=no
 # changelog=
 
 # Tags are comma separated with spaces allowed
-tags=python rick roll
+tags=pluginbuilder, template, minimal, never gonna give you up
 
 homepage=http://homepage
 category=Plugins
