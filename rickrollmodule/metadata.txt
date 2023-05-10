@@ -4,7 +4,7 @@
 
 [general]
 name=Rick roller name
-qgisMinimumVersion=3.0
+qgisMinimumVersion=3.1
 description=Rick roll description
 version=0.2
 author=fdobad
@@ -12,8 +12,8 @@ email=8339628-fdobad@users.noreply.gitlab.com
 
 about=This plugin will rick roll you
 
-tracker=http://bugs
-repository=http://repo
+tracker=https://github.com/fdobad/qgis-minimal-plugin/issues
+repository=https://github.com/fdobad/qgis-minimal-plugin
 # End of mandatory metadata
 
 # Recommended items:
