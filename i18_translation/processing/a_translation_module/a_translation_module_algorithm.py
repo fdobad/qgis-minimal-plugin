@@ -70,7 +70,7 @@ class ATranslationClassNameAlgorithm(QgsProcessingAlgorithm):
         self.addParameter(
             QgsProcessingParameterFeatureSource(
                 self.INPUT,
-                self.tr('Input layer'),
+                self.tr('Input layer') + " " + self.tr('translation strings are concatenable') + ".",
                 [QgsProcessing.TypeVectorAnyGeometry]
             )
         )
@@ -136,14 +136,14 @@ class ATranslationClassNameAlgorithm(QgsProcessingAlgorithm):
         Returns the translated algorithm name, which should be used for any
         user-visible display of the algorithm name.
         """
-        return self.tr(self.name())
+        return self.tr("Translation algorithm's name")
 
     def group(self):
         """
         Returns the name of the group this algorithm belongs to. This string
         should be localised.
         """
-        return self.tr(self.groupId())
+        return self.tr("Algorithm's group name")
 
     def groupId(self):
         """
